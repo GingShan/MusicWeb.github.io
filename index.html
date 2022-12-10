@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音樂網站</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <meta itemprop="name" content="音樂網站">
+    <meta itemprop="image" content="images/og-image.jpg">
+    <meta property="og:title" content="音樂網站">
+    <meta property="og:image" content="images/og-image.jpg">
+    <!-- Facebook Open Graph Meta
+    ================================================== -->
+    <meta property="og:title" content="音樂網站" />
+    <meta property="og:site_name" content="音樂網站" />
+    <meta property="og:image" content="images/og-image.jpg" />
+    <!-- google 字體崁入
+    ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&family=Noto+Serif+TC:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- 常用的點圖放大 fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- 進場動態 aos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <audio id="musicOne" controls loop >
+        <source src="./music/測試音樂.mp3"  type="audio/mp3" />
+    </audio>
+    <div class="BG"></div>
+    <section class="banner">
+        <div class="stage">
+            <div class="layer" style="background-image: url(./images/banner/layer01.svg);" data-aos="fade-in"
+                data-aos-delay="200"></div>
+            <div class="layer" style="background-image: url(./images/banner/layer02.svg);" data-aos="fade-down-right"
+                data-aos-delay="300"></div>
+            <div class="layer" style="background-image: url(./images/banner/layer03.svg);" data-aos="fade-down-left"
+                data-aos-delay="400"></div>
+            <div class="layer" style="background-image: url(./images/banner/layer04.svg);" data-aos="fade-down"
+                data-aos-delay="500"></div>
+        </div>
+    </section>
+    <section class="page page01">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8 p-0">
+                    <div class="number">
+                        <img src="./images/img/numer01.svg" alt="" style="width: 100%;" />
+                    </div>
+                    <div class="content">
+                        <img src="./images/img/page01-txt.svg" alt="希林娜依．高" style="width: 100%;" />
+                        <div class="Btn playBtn" id="PlayBtn">
+                            <img src="./images/img/play.svg" alt="" style="width: 100%;" />
+                        </div>
+                        <div class="Btn pauseBtn" id="PauseBtn">
+                            <img src="./images/img/pause.svg" alt="" style="width: 100%;" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-0"></div>
+                <div class="col-12 p-0">
+                    <div class="MusicArea">
+                        <div class="musicswiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="InnerImg" style="background-image: url(./images/img/page01_iten01.jpg);"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="InnerImg" style="background-image: url(./images/img/page01_iten02.svg);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".musicswiper", {
+        loop:true,
+      });
+    </script>
+</body>
+<script>
+    AOS.init({
+        duration: 1500,
+        anchorPlacement: 'center-center',
+
+    });
+</script>
+
+</html>

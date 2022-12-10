@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    position: relative;
+}
+
+body{
+    background-color: #f1efe7;
+}
+
+audio{
+    display: none;
+}
+
+.BG{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/banner/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.page .number{
+    width: 25%;
+    padding: 3% 4%;
+    background-color: #fff;
+}
+
+.page .content{
+    width: 100%;
+    padding: 10% 12%;
+    padding-left: 5%;
+    background-color: #fff;
+    position: relative;
+}
+
+.page .swiper-slide .InnerImg{
+    width: 100%;
+    padding-top: 88%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+.page .content .Btn{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 13%;
+    cursor: pointer;
+}
+
+.page .content .playBtn{
+    z-index: 3;
+}
+
+.page .content .pauseBtn{
+    z-index: 2;
+}
